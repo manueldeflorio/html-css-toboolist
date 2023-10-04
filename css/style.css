@@ -1,9 +1,16 @@
 
+body {
+
+    background-color: gainsboro;
+    margin: 0;
+}
 
 header {
     background-color: white;
     height: 80px;
-    margin: 10px
+    margin-left: 0;
+    margin-bottom: 40px;
+    padding-left: 20px;
 }
 
 .logo {
@@ -14,40 +21,78 @@ header {
 .title {
     vertical-align: middle;
     display: inline-block;
+    vertical-align: middle;
+    display: inline-block;
+    font-size: 45px;
+    line-height: 15px;
 }
 
-#main_toboolist {
-    background-color: rgb(223, 130, 130);
-}
-
-.container {
+#main_header {
+    box-sizing: border-box;
     background-color: white;
-    padding: 10vh 2rem;
-    padding-top: 1vh;
-    padding-right: 2rem;
-    padding-bottom: 10vh;
-    padding-left: 5rem;
+    height: 50px;
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-bottom: 2px;
+    padding-left: 50px;
+    line-height: 3rem;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+#container {
+    background-color: white;
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-top: 0px;
+    padding-left: 45px;
+    padding-top: 30px;
+    
 }
 
 .badge_task {
     height: 30px;
     width: 80px;
-    background-color: rgb(38, 148, 148);
+    background-color:rgb(1 180 255);
     text-align: center;
-    vertical-align: middle;
+    vertical-align: middle; 
     line-height: 30px;
     color: white;
     border-radius: 5px;
     display: inline-block;
+    border: 2px solid rgb(1 180 255);
 }
 .badge_editorial {
     height: 30px;
     width: 100px;
-    background-color: rgb(38, 148, 148);
+    background-color: rgb(255, 255, 255);
     text-align: center;
     vertical-align: middle;
     line-height: 30px;
-    color: white;
+    color: rgba(202 200 200);
     border-radius: 5px;
     display: inline-block;
+    border: 2px solid rgba(202 200 200);
+}
+
+h2::before {
+    content: '\25BE';
+    font-weight: bold;
+}
+
+.circle_check::before {
+    
+    content: '\2713';
+    display: inline-block;
+    height: 18px;
+    width: 18px;
+    text-align: center;
+    vertical-align: middle;
+    border: 2px solid rgb(144, 238, 144);
+    border-radius: 50%;
+    font-weight: bold;
+    color: rgb(144, 238, 144);
+    line-height: 20px;
+    margin-left: 5px;
+    font-size: 12px;
 }
