@@ -17,14 +17,19 @@ header {
 }
 
 main {
-
+    background-color: rgb(223, 130, 130);
 }
 
 .container {
-    padding: 50px;
+    background-color: white;
+    padding: 10vh 2rem;
+    padding-top: 1vh;
+    padding-right: 2rem;
+    padding-bottom: 10vh;
+    padding-left: 5rem;
 }
 
-.badge {
+.badge_task {
     height: 30px;
     width: 80px;
     background-color: rgb(38, 148, 148);
@@ -33,4 +38,16 @@ main {
     line-height: 30px;
     color: white;
     border-radius: 5px;
+    display: inline-block;
+}
+.badge_editorial {
+    height: 30px;
+    width: 100px;
+    background-color: rgb(38, 148, 148);
+    text-align: center;
+    vertical-align: middle;
+    line-height: 30px;
+    color: white;
+    border-radius: 5px;
+    display: inline-block;
 }
